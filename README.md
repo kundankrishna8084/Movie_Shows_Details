@@ -24,27 +24,28 @@ It exposes REST APIs to check real-time seat availability and to book tickets wi
 
 ## 📁 Project Structure
 Movie_Shows_Details/
- ├── src/main/java/com/jsp/movie_shows_details
- │   ├── controller
- │   │    └── AvailabilityController.java     # REST endpoints for show availability
- │   ├── service
- │   │    └── AvailabilityService.java        # Business logic for seat availability
- │   ├── repository
- │   │    ├── ShowRepository.java             # JPA repository for shows
- │   │    ├── ScreenRepository.java           # JPA repository for screens
- │   │    ├── SeatRepository.java             # JPA repository for seats
- │   │    ├── BookingRepository.java          # JPA repository for bookings
- │   │    └── BookingSeatRepository.java      # JPA repository for booked seats
- │   ├── entity
- │   │    ├── Show.java                       # Entity for movie shows
- │   │    ├── Screen.java                     # Entity for cinema screens
- │   │    ├── Seat.java                       # Entity for seats
- │   │    ├── Booking.java                    # Entity for bookings
- │   │    └── BookingSeat.java                # Entity for booked seats
- │   ├── dto
- │   │    └── AvailabilityResponse.java       # DTO for availability response
- │   └── MovieShowsDetailsApplication.java    # Main Spring Boot application
- └── pom.xml                                  # Maven dependencies
+├── src/main/java/com/jsp/movie_shows_details
+│ ├── controller
+│ │ └── AvailabilityController.java # REST endpoints for show availability
+│ ├── service
+│ │ └── AvailabilityService.java # Business logic for seat availability and bookings
+│ ├── repository
+│ │ ├── ShowRepository.java # JPA repository for shows
+│ │ ├── ScreenRepository.java # JPA repository for screens
+│ │ ├── SeatRepository.java # JPA repository for seats
+│ │ ├── BookingRepository.java # JPA repository for bookings
+│ │ └── BookingSeatRepository.java # JPA repository for booked seats
+│ ├── entity
+│ │ ├── Show.java # Entity for movie shows
+│ │ ├── Screen.java # Entity for cinema screens
+│ │ ├── Seat.java # Entity for seats
+│ │ ├── Booking.java # Entity for bookings
+│ │ └── BookingSeat.java # Entity for booked seats
+│ ├── dto
+│ │ └── AvailabilityResponse.java # DTO for availability response
+│ └── MovieShowsDetailsApplication.java # Main Spring Boot application
+└── pom.xml # Maven dependencies
+
 
 ## ✅ Design & Entities (high-level)
 **Show**
